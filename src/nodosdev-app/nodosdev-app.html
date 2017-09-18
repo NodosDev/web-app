@@ -1,3 +1,5 @@
+<!-- Components -->
+<link rel="import" href="/bower_components/app-layout/app-layout.html">
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
 <dom-module id="nodosdev-app">
@@ -7,7 +9,31 @@
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+    
+    <app-header-layout>
+
+      <app-header reveals effects="waterfall" slot="header">
+        <app-toolbar class="toolbar">
+          <div class="tabs">
+            <a href="#about">Inicio</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+          </div>
+        </app-toolbar>
+      </app-header>
+
+        <header>
+          <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-0/p480x480/19399514_1943335802577756_2824429806092260598_n.jpg?oh=a5f9df9f58eae151f2f52668650b1944&oe=5A59EE0A" alt="Logo Nodos Dev">
+
+          <h2>Soluciones creativas.</h2>
+        </header>
+
+      <section> <!-- Inforamción y servicios -->
+        
+      </section>
+
+      <footer></footer>
+    </app-header-layout>
   </template>
 
   <script>
